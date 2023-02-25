@@ -1,0 +1,113 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: 'Sriracha';
+  font-size: 20px;
+  padding: 30px;
+  line-height: 2em;
+  box-shadow: 1px 1px 1px black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 135px;
+  text-align: center;
+  padding-top: 90px;
+  line-height: 0%;
+  font-weight: bolder;
+}
+
+header h1 {
+  font-family: 'Passion One';
+  font-size: 3.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight:500;
+}
+
+header p {
+  font-weight: normal;
+}
+
+div.imagem {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#img1 {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfhD6sfiOdydr7sPRCtbQASJAg62eKXOc0IUA1ia829YVjmH8G3IbNJWOqtJ_SVTo3_IsKcOFtq9wBkH1XEtbneKOEk0EAsm75NToh09ci3IELyh7A8g5xi6YmFxDcuvA7lUdKRTtjMqHUrkz45uEzb-S2NA7dD_BT69GkNchj6XAynvbft1vQpgqAag/s1920/background001.jpg');
+  background-position: right top;
+}
+
+#img2 {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEqWYy_CB0YPbrY3I8RzphbD2KNtk6H2C8OssiMUyrltcskcybkB9NsD1GbkEDBUJJlJETAbghKAcmtTmL6Y-ub_uc-RNLtq0MvBMyDeJlEfYZT6Ao7TNxYe6tnu9VzOj8ycaPvMncKDPyERR4SPQjYAGArQAwHkxxXLYBtQeLqJv7se88XLQFQQHysA/s1920/background002.jpg');
+  background-position: left bottom ;
+}
+
+.estrofe1 {
+  background-color: white;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  box-shadow: 4px 4px 10px black;
+}
+
+.estrofe25 {
+  width: 260px;
+  margin-left: 30px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 5px black;
+}
+
+.normal {
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.estrofe67 {
+  background-color: white;
+  padding-top: 90px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
