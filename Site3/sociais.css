@@ -1,0 +1,22 @@
+@charset "URF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  width: 100vw;
+}
+
+a {
+  display: block;
+  color: black;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: red;
+  text-decoration: none;
+  text-align: center;
+}

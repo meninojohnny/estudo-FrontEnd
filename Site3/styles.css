@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4Y9AwO-oxPN2alqTxqvsuq75NUuayUp9lnbMk7RKbHg5Ls79liGBGnRN5xtm8ZEp0ZUaji2PlzI9C-FS8AS3EtoAuOXYgky55xwaC-ONmYUlYmIlbJ0un9OAH_YxmOtwCP2gOfsULqXzchqaD15O4nhDatpNKR7IZI7xnGaf8oK1-7iIWk0vZmZsfaQ/s2200/fundo-madeira.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+.celular {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt57F38_YqXeULfPXdMmarM4wKqK9TveZYGYbdegMX37-1Tmfh3XGsDop9sgOlcD3SkZ0AJpevafnvwdf9wr-PFSTEy1yYeGe9qLCuXTaBgkHWSwB3aQjStcEAovxP8E0zfDfuWqWN-HQOXad1sd2orQXjemrQL-MfvzvC8lpATqiOwVIp6ITZ9djRtw/s627/frame-iphone.png");
+  width: 311px;
+  height: 627px;
+}
+
+iframe.tela {
+  position: relative;
+  top: 80px;
+  left: 22px;
+  width: 264px;
+  height: 468px;
+}
+
+.aplicativos {
+  text-align: right;
+  padding-top: 160px;
+
+}
+
+.aplicativos img {
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.40);
+}
