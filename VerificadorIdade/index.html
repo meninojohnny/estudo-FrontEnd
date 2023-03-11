@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="div1">
+      <label for="nasci" class="label1"><strong>Ano de Nascimento:</strong></label>
+      <input type="number" name="nasci" id="nasci" required>
+    </div>
+
+    <div class="div2">
+      <label id="sexo1" for="genero"><strong>Sexo:</strong>
+        <label for="homem">
+          <input type="radio" name="sexo" id="homem" value="homem" checked> Masculino
+        </label>
+        <label for="mulher">
+          <input type="radio" name="sexo" id="mulher" value="mulher"> Feminino
+        </label> 
+      </label>
+    </div>
+    <button onclick="Verificar()">Verificar</button>
+    <div id='res'></div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXKdin5SndgQgP9oZHHxBeTx47ImaYLrMsy8jKwCERWZQWvgeIFj84k3GOgUOZv_IlDdr7TvFh_AQzMuyqZzcBv8zF99RZfhwoMKGGqiXuA7z9Aefez6b8LQ-zvZQOBJVNsRaqbeiNuS4ePSVyly4NYBGAMKe8B02p9VCer1cbhjTukhEFEBieiwz1tg/s1920/InShot_20230311_191753900.jpg" alt="" id="menina1" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ8XkkSjzciEg35EhsmrNtPjhR2Xo17bW4Dn2pwbJvqYDQmDkGNCgjb2o_nGhWyhFAq9BM7RmaueXM-ekCpDSEQt4D4riTgJLoFfruB4lDXK_u5GR2XEUfa0JMMMZS3VB2onTVdCiX5m6qmrJbwlBYvqmZmYzJJ3ZFPOupwluM4o9rR1j9-w04imF1NQ/s4096/InShot_20230311_141806387.jpg" alt="" id="menina2" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvVTQuNJt1NkWCFn_C3r9LxQ77szEAzz6sZerxIuj40RMcIGJv4XqGf7BJGh3FVDCuUEf8KyQGi6WdxV-2JnbFRte-2w_sR6qlk5MsGT1Q8KGa03xbgFk_EzV1TG67Pjfut318FvjYKo2I0WsYfQxLOSSkwNwXbxx-yp93CRw9BCwz_KqT2wcuDY03WQ/s1920/InShot_20230311_192533821.jpg" alt="" id="mulher1" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlYKJ_FRcNt5eaG73qMtCADaenZs59n8Hxqhpc1rs72RL_8qAtsOnQQNz5U7lwOXSZ1jxTJ8REa3b01XiDpKvsSHPxvWwLmqL_Y4P3wO4W7ILiSa_UVqKIluYJuUmnd2AFbr5bB0aqGjoq5b94XKpkPx2Qfu3nnTdlsmY7SePyhXB4hbq8oKTYuwPxog/s354/images%20(11).jpeg" alt="" id="idosa" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqHdi3hjLxV16aLEi4XA9BMq8yUDkQ3eAKCeJH8CeESJGZZCtxgrFFv0C9DhD5Wf-Zeyj3lb7S-G_X_s4RkQdPEUp_JM90x53ASVT90VboRkssmqddtHkmuQ3JF6Xt9oKcNMLD4-7zh-HmbR662GRU3d_twbwfk9DlXPv4yRQ7cmIDIq3zOgMiL-LEkw/s1920/InShot_20230311_191527102.jpg" alt="" id="menino1" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdF9iCrCRzvPH6bRklpMqbUlnBLCdJhDFJVXg-VPhOo89lo0Kxsyn8eTNb4KZYvcUeI0txzMWYKxzFcyejzz_4ftzAuSEI9cfH9GjfLCjGSjbx9Uj2KMFZKZXao9zVlLUIH96SE4gv1TIEQXHd1HVMGexEYWBRhAgJrRFFvo-Plo5rhIhkmj2P0k0ImQ/s4096/InShot_20230311_141609026.jpg" alt="" id="menino2" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNhOsQPmU0T71LYqsyrtKj4eqaZfuhmyXmXt9Wb8wDn_bnUEdy4nnIsIM_uKBRXAD34vCU5PMI0uzq49BM_HUFtdwOUG6WQBNRy8KYcp5S-qwrpYggW1Da-JXhkc7Zh23bPmsUyoeg6iNL4Z-qV0GNz8zLxtPc2LNZNjPqy9jejrIIj1S1uulynBU7PQ/s554/images%20(8).jpeg" alt="" id="homem1" class="imagem">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRr9DD6UG0EiTW6aao5rfoxdJvE6L5LBBDLwXXH6C6NJLRtzKx2eD2dxtWwYe_qC60KWFnmSTJyv3WmOws0wSw1bacabvnxZYlPwAg6dNu1h0dDpldRr1B_Kt2I2Pe2KRCAJR9PVgA7sbR4gYli-bbv5ViDciFfUAJLiAARLonSvHufwOzZluRX69m0A/s1920/InShot_20230311_193210993.jpg" alt="" id="idoso" class="imagem">
+  </main>
+
+  <script>
+    function Verificar() {
+      var ano = Number(nasci.value)
+      var idade = 2023 - ano
+      var genero1 = document.querySelector('input[name="sexo"]:checked').value
+
+      menino1.style.display = 'none'
+      menino2.style.display = 'none'
+      menina1.style.display = 'none'
+      menina2.style.display = 'none'
+      homem1.style.display = 'none'
+      mulher1.style.display = 'none'
+      idoso.style.display = 'none'
+      idosa.style.display = 'none'
+
+      if (idade == 2023 || idade == 0) {
+        idade = 'casa'
+      }
+      
+
+      if (idade < 14) {
+        var faixa = 'criança'
+      } else if (idade < 18) {
+        var faixa = 'adolescente'
+      } else if (idade < 60) {
+        var faixa = 'adulto'
+      } else if (idade >= 60) {
+        var faixa = 'idoso'
+      } 
+
+      if (genero1 == 'homem') {
+        if (faixa == 'criança') {
+          faixa = 'um menino'
+        } else if (faixa == 'adolescente') {
+          faixa = 'um adolescente'
+        } else if (faixa == 'adulto') {
+          faixa = 'um homem'
+        } else if (faixa == 'idoso') {
+          faixa = 'um velhinho'
+        }
+      } else {
+        if (faixa == 'criança') {
+          faixa = 'uma menina'
+        } else if (faixa == 'adolescente') {
+          faixa = 'uma adolescente'
+        } else if (faixa == 'adulto') {
+          faixa = 'uma mulher'
+        } else if (faixa == 'idoso') {
+          faixa = 'uma velhinha'
+        }
+      }
+
+      if (faixa == 'um menino') {
+        menino1.style.display = 'block'
+      } else if (faixa == 'um adolescente') {
+        menino2.style.display = 'block'
+      } else if (faixa == 'um homem') {
+        homem1.style.display = 'block'
+      } else if (faixa == 'um velhinho' ) {
+        idoso.style.display = 'block'
+      } else if (faixa == 'uma menina') {
+        menina1.style.display = 'block'
+      } else if (faixa == 'uma adolescente') {
+        menina2.style.display = 'block'
+      } if (faixa == 'uma mulher') {
+        mulher1.style.display = 'block'
+      } else if (faixa == 'uma velhinha') {
+        idosa.style.display = 'block'
+      }
+
+      if (idade == 'casa'){
+        window.alert('DIGITE UM ANO DE NASCIMENTO VÁLIDO PARA PROSSEGUIR') 
+      } else {
+      res.innerHTML = `Identifiquei que você é ${faixa} de ${idade} anos`
+      }
+
+    }
+  </script>
+  
+</body>
+</html>
