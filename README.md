@@ -6,6 +6,15 @@ Data Atual:
 Relógio Analógico:
 # https://meninojohnny.github.io/estudo-FrontEnd/RelogioAnalogico/
 
+Site 1|História do mascote Android|:
+# https://meninojohnny.github.io/estudo-FrontEnd/Site1/
+
+Site 2|Cordel Moderno|: 
+# https://meninojohnny.github.io/estudo-FrontEnd/Site2/
+
+Site 3|Redes Sociais|:
+# https://meninojohnny.github.io/estudo-FrontEnd/Site3/
+
 Sorteio das tarefas de casa:
 # https://meninojohnny.github.io/estudo-FrontEnd/TarefasDaCasa/
 
