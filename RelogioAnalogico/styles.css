@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  ---preto8: rgba(0,0,0,0.8);
+  ---preto9: rgba(0,0,0,0.9);
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, rgb(0, 18, 51), rgb(24, 78, 119), rgb(0, 18, 51));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.digital {
+  width: 100px;
+  padding: 2px;
+  background-color: black;
+  border: 3px solid rgb(173, 181, 189);
+  color: rgba(255,255,255,0.9);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3em;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(---preto8);
+}
+
+main {
+  position: relative;
+  background: rgb(137, 194, 217) url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8OJ3JyCOZVAZ2Z0qGWke2v-pky4Y3xXXPYDCNs6lU1TqgyuFtp3gVBbwuvWXwjEnc687u3GEG--BZkHz_PV64VK8i6ngv6y-SOPKL7hLakkecmRhnrjVZqYJJbwOihtyqTaNizXYdpiAw5PsMPt3NffIOJwT9BQvPtD5IkPwdCfabTep9EzzPwidLdQ/s1231/1645691105_62-kartinkin-net-p-tsiferblat-chasov-kartinki-64.png');
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid black;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 100px var(---preto8);
+}
+
+.p1 {
+  width: 4px;
+  height: 180px;
+  transform: rotate(0deg);
+  position: absolute;
+  left: 138px;
+}
+
+.p1 p {
+  width: 4x;
+  height: 120px;
+  background-color: rgb(120, 0, 0);
+  border-radius: 10px;
+}
+
+.p2 {
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  left: 138px;
+}
+
+.p2 p {
+  width: 5px;
+  height: 50px;
+  background-color: var(---preto9);
+  border-radius: 10px;
+}
+
+.p3 {
+  width: 5px;
+  height: 150px;
+  position: absolute;
+  left: 138px;
+  transform: rotate(180deg);
+}
+
+.p3 p {
+  width: 5px;
+  height: 75px;
+  background-color: var(---preto9);
+  border-radius: 10px;
+}
+
+.crl {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: 0.4px;
+}
