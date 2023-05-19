@@ -48,6 +48,6 @@ div {
   border-radius: 5px;
   margin-top: 10px;
   cursor: pointer;
-  box-shadow: 5px 5px 0px black;
+  box-shadow: 3px 3px 0px black;
   text-align: center;
 }
