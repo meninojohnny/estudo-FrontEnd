@@ -3,8 +3,14 @@ Nesse repositório mostro um pouco dos projetos desenvolvidos de acordo com o qu
 Data Atual:
 # https://meninojohnny.github.io/estudo-FrontEnd/DataAtual/
 
+Pesquisa de curso:
+# https://meninojohnny.github.io/estudo-FrontEnd/PesquisaQuali/
+
 Relógio Analógico:
 # https://meninojohnny.github.io/estudo-FrontEnd/RelogioAnalogico/
+
+Semaforo:
+# https://meninojohnny.github.io/estudo-FrontEnd/Semaforo/
 
 Site 1|História do mascote Android|:
 # https://meninojohnny.github.io/estudo-FrontEnd/Site1/
