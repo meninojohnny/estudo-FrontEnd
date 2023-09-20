@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Chewy', cursive;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  background: url('images/background1.jpeg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.img1 {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.img2 {
+  width: 300px;
+  box-shadow: -3px -3px 8px rgba(173, 181, 189, 0.5);
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1.6em;
+  border-radius: 50px;
+  background-color: rgba(216, 205, 185, 1);
+  border: 3px solid rgba(113,113,111,0.1);
+  box-shadow: -3px 3px 3px rgba(133, 133, 111, 1);
+  text-shadow: 0.4px 0.4px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  box-shadow: none;
+}
