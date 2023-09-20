@@ -19,11 +19,11 @@ function Data() {
   if (hora >= 0 && hora < 4) {
     campoData.innerHTML = 'VAI DORMIIR';
   } else if (hora >= 4 && hora < 12) {
-    campoData.innerHTML = 'Bom dia Abiga';
+    campoData.innerHTML = 'Bom dia';
   } else if (hora >= 12 && hora < 18) {
-    campoData.innerHTML = 'Boa tarde Abiga';
+    campoData.innerHTML = 'Boa tarde';
   } else {
-    campoData.innerHTML = 'Boa noite Abiga';
+    campoData.innerHTML = 'Boa noite';
   }
 }
 
